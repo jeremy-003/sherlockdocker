@@ -38,7 +38,7 @@ if (mongoURL === undefined) {
     ip = '127.0.0.1';
     port = 3000;
   }
-  mongoURLLabel = mongoURL = 'mongodb://' + dbHost + ':27017/sherlockdb';
+  mongoURLLabel = mongoURL = 'mongodb://' + dbHost + ':27017/sherlockdockerdb';
 }
 
 // Mongo is a document-based database
@@ -113,7 +113,7 @@ initDb(function(err){
   console.log('Error connecting to Mongo. Message:\n'+err);
 });
 
-// The endpoints that Sherlock will use
+// The endpoints that sherlockdocker will use
 // POST - MySite
 app.post('/mySites', (req, res) => {
   if (!isValidFullMySite(req.body)) {

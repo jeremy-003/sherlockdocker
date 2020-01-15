@@ -1,5 +1,5 @@
 {
-  "name": "sherlock",
+  "name": "sherlockdocker",
   "version": "0.1.0",
   "description": "MySites Management",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jeremy-003/sherlock.git"
+    "url": "https://github.com/jeremy-003/sherlockdocker.git"
   },
   "author": "Endurance International Group",
   "license": "ISC",

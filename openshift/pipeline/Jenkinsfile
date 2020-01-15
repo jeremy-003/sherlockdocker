@@ -1,6 +1,6 @@
 node('nodejs') {
   stage 'build'
-  openshiftBuild(buildConfig: 'sherlock', showBuildLogs: 'true')
+  openshiftBuild(buildConfig: 'sherlockdocker', showBuildLogs: 'true')
   stage 'deploy'
-  openshiftDeploy(deploymentConfig: 'sherlock')
+  openshiftDeploy(deploymentConfig: 'sherlockdocker')
 }
